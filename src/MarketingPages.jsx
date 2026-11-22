@@ -101,9 +101,12 @@ function Schools({onContact}) {
     </div>
     <figure className="school-photo"><img src="/assets/armenia-lab.jpg" alt="An inclusive learning space in Armenia"/><figcaption>Key2Enable learning lab · Armenia</figcaption></figure>
     <section className="catalogue-section study-panel">
-      <h2>UAE Literacy Lab case study</h2>
-      <div className="impact-numbers">{[['50', 'Learners'], ['4', 'Months'], ['~65%', 'Attendance before'], ['>90%', 'Attendance after']].map(([number, label]) => <div key={label}><RollingNumber value={number}/><span>{label}</span></div>)}</div>
-      <a className="source-link" href={studyURL}>Read the published cohort study</a>
+      <div><p className="eyebrow">Nafath · UAE · Four-month case study</p><h2>50 learners. One lab. Four months.</h2>
+        <p>Average attendance in this cohort rose from about 65% before the lab to above 90% during the programme.</p>
+      </div>
+      <div className="study-stat-pair"><div><strong>~65%</strong><span>Before the programme</span></div><div><strong>&gt;90%</strong><span>During the programme</span></div></div>
+      <p className="study-note">Published case study · Outcomes describe this cohort.</p>
+      <a className="source-link" href={studyURL}>Read the published case study</a>
     </section>
   </article>;
 }

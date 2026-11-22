@@ -19,11 +19,13 @@ function readRoute() {
 
 function Home({onContact}) {
   return <>
-    <section className="home-masthead">
+    <section className="home-masthead home-cinema">
+      <img className="cinema-photo" src="/assets/lab-gallery/brazil.jpg" alt="Students using Key-X keyboards in a classroom" width="1000" height="667" fetchPriority="high"/>
+      <div className="cinema-shade" aria-hidden="true"/>
       <div className="wrap home-lead">
         <div className="hero-copy">
           <p className="eyebrow">Key2Enable Academy</p>
-          <h1>Make learning accessible.</h1>
+          <h1>Make learning <span className="headline-highlight">accessible.</span></h1>
           <p>Accessible games and practical training for learners with disabilities and the people who support them.</p>
           <div className="actions">
             <button className="action gold action-prominent" onClick={() => onContact('Book a call')}>Book a call</button>
@@ -31,32 +33,33 @@ function Home({onContact}) {
           </div>
           <p className="hero-price">Proposed membership · <strong>US$60/month</strong></p>
         </div>
-        <figure className="hero-portrait">
-          <img src="/assets/lab-gallery/brazil.jpg" alt="Two students using Key-X keyboards in a classroom" width="620" height="413" fetchPriority="high"/>
-          <figcaption>Key-X in the classroom · Brazil</figcaption>
-        </figure>
+        <div className="hero-gallery" aria-label="Key2Enable learning in a classroom">
+          <figure className="hero-portrait"><img src="/assets/lab-gallery/brazil.jpg" alt="Students using Key-X keyboards in a classroom" width="620" height="413" fetchPriority="high"/><figcaption>Key-X in the classroom · Brazil</figcaption></figure>
+        </div>
       </div>
     </section>
+    <div className="skill-marquee" aria-label="Learning areas"><div className="skill-marquee-track" aria-hidden="true">{['Communication','Daily living','Work skills','Music','Literacy','Numeracy','Memory','Planning','Creativity','Communication','Daily living','Work skills','Music','Literacy','Numeracy','Memory','Planning','Creativity'].map((skill,index)=><span key={index}>{skill}<i/></span>)}</div></div>
     <section className="wrap section home-benefits">
       <div className="section-heading"><div><p className="eyebrow">Academy membership</p><h2>What your membership gives you</h2></div>
         <a className="action gold action-prominent" href="#Academy">See plans and pricing</a>
       </div>
       <div className="benefit-grid">
-        <article className="home-game-benefit">
-          <div><h3>Accessible games</h3><a className="text-link" href="#Game">Explore the library</a></div>
-          <img src="/assets/hub-game-03.jpg" alt="" width="75" height="75" loading="lazy"/>
-        </article>
-        <article><h3>Guided pathways</h3><p>Build a practice routine with activities organised around specific learning goals.</p></article>
-        <article><h3>Training</h3><p>Learn to use assistive devices and communication tools in class and at home.</p></article>
-        <article><h3>Teaching resources</h3><p>Plan sessions with activity guides, lesson plans and caregiver checklists.</p></article>
+        <article><span className="benefit-index">01</span><div><h3>Play to practise</h3><p>Browser games for literacy, sequencing and creative expression.</p><a className="text-link" href="#Game">Explore the games</a></div></article>
+        <article><span className="benefit-index">02</span><div><h3>Follow a pathway</h3><p>Build steady routines around practical learning goals.</p></div></article>
+        <article><span className="benefit-index">03</span><div><h3>Learn with your team</h3><p>Training for teachers, therapists and families supporting a learner.</p></div></article>
+        <article><span className="benefit-index">04</span><div><h3>Use ready resources</h3><p>Bring activity guides and lesson materials into everyday practice.</p></div></article>
       </div>
     </section>
     <section className="lab-band"><div className="wrap home-reach">
       <h2>Key2Enable’s lab network</h2><ImpactNumbers/>
     </div></section>
-    <section className="wrap section split-feature">
-      <figure><img src="/assets/family-lab.jpg" width="800" height="450" alt="A learner and adults exploring assistive technology in Canada" loading="lazy"/><figcaption>Family &amp; Community Lab · Canada</figcaption></figure>
-      <div><h2>See what fits your learner.</h2><p>We can walk you through Academy membership, the game library and assistive tools like Key-X and Colibri on a call.</p>
+    <section className="wrap section home-fieldwork">
+      <div className="fieldwork-heading"><p className="eyebrow">Learning in practice</p><h2>Built around people, in real learning spaces.</h2><p>Explore how Key2Enable technology is used by learners, families and educators.</p></div>
+      <div className="fieldwork-gallery">
+        <figure className="fieldwork-main"><img src="/assets/lab-gallery/canada2.jpg" width="900" height="600" alt="Key2Enable Family and Community Lab in Canada" loading="lazy"/><figcaption>Family &amp; Community Lab · Canada</figcaption></figure>
+        <figure className="fieldwork-secondary"><img src="/assets/lab-gallery/brazil4.jpg" width="900" height="600" alt="Key2Enable learning activities in Brazil" loading="lazy"/><figcaption>Learning activities · Brazil</figcaption></figure>
+      </div>
+      <div className="fieldwork-cta"><p>Find the right place to start.</p>
       <button className="action gold action-prominent" onClick={() => onContact('Book a call')}>Book a call</button></div>
     </section>
   </>;

@@ -53,13 +53,13 @@ export function ProductMenu({active, close}) {
 function Software({standalone = false}) {
   const Heading = standalone ? 'h1' : 'h2';
   return <section className="catalogue-section">
-    <Heading>Learning and communication software</Heading>
-    <dl className="software-list">
+    <div className="software-showcase-head"><p className="eyebrow">Key2Enable software</p><Heading>Tools for communication and learning.</Heading><p>Explore the software alongside assistive access devices and the Academy.</p></div>
+    <dl className="software-list software-motion-grid">
       {software.map(([name, description]) => <div key={name}><dt>{name}</dt><dd>{description}</dd></div>)}
     </dl>
     <div className="catalogue-membership material-panel">
-      <div><h2>Bring these tools into a learning routine</h2><p>Explore the Academy’s planned training, learning pathways and teaching resources.</p></div>
-      <a className="action gold action-prominent" href="#Academy">Explore Academy membership</a>
+      <div><p className="eyebrow">One membership</p><h2>Get the whole Academy.</h2><p>Games, pathways, training and teaching resources together.</p></div>
+      <a className="action action-prominent" href="#Academy">Explore membership</a>
     </div>
   </section>;
 }
@@ -110,14 +110,14 @@ export function Catalogue({page, onContact}) {
         <div className="card-copy"><small>{type}</small><h2>{name}</h2><p>{description}</p><span className="text-link">Explore {name}</span></div>
       </a>)}
     </div>
-    <section className="split-feature catalogue-section">
-      <figure><img src="/assets/lab-gallery/canada2.jpg" alt="Key2Enable’s Family and Community Lab in Canada" loading="lazy"/><figcaption>Family &amp; Community Lab · Canada</figcaption></figure>
-      <div><h2>Technology in use</h2><ImpactNumbers/></div>
+    <section className="products-impact catalogue-section">
+      <figure><img src="/assets/lab-gallery/armenia2.jpg" alt="Learners using assistive technology in an inclusive learning space" loading="lazy"/><figcaption>Key2Enable learning lab · Armenia</figcaption></figure>
+      <div><p className="eyebrow">Learning spaces</p><h2>Access that reaches beyond the device.</h2><ImpactNumbers/></div>
     </section>
     <Software/>
-    <section className="split-feature catalogue-section">
-      <img className="feature-image" src="/assets/hub-game-01.jpg" alt="Keyboard Grove game cover" loading="lazy"/>
-      <div><h2>Educational games</h2><p>Practise keyboard use, sequencing and creative expression.</p><a className="action" href="#Game">Browse the games</a></div>
+    <section className="products-game-showcase catalogue-section">
+      <div><p className="eyebrow">Playful learning</p><h2>Educational games</h2><p>Explore browser games for keyboard discovery, sequencing, creativity and memory.</p><a className="action" href="#Game">Browse the games</a></div>
+      <div className="products-game-art"><img src="/assets/hub-game-01.jpg" alt="Keyboard Grove game artwork" loading="lazy"/><img src="/assets/hub-game-04.jpg" alt="Robot Workshop game artwork" loading="lazy"/><img src="/assets/floral-artistry.jpg" alt="Floral Artistry game artwork" loading="lazy"/></div>
     </section>
     <Materials/>
     <a className="text-link" href="https://www.key2enable.ae/solutions">Official product catalogue</a>

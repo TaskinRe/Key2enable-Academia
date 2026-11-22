@@ -25,16 +25,9 @@ export function GamesShowcase() {
   }
 
   return <>
-    <section className="wrap section game-intro split-feature enter">
-      <div>
-        <p className="eyebrow">Academy / Game library</p><h1>Games that teach, one skill at a time</h1>
-        <p>Play in your browser. Pick a game by skill and start with a short session, on your own or with someone alongside you.</p>
-        <div className="actions"><a className="action gold action-prominent" href="#Academy">Get the full library</a><a className="action secondary" href="#Academy/Pathways">See the learning pathways</a></div>
-      </div>
-      <figure className="game-screen">
-        <div><img src="/assets/hub-game-03.jpg" alt="Kites and learning tiles from Sky Catch" width="1536" height="1024"/></div>
-        <figcaption>Sky Catch artwork</figcaption>
-      </figure>
+    <section className="game-hero">
+      <div className="wrap game-hero-inner"><div><p className="eyebrow">Key2Enable · Game library</p><h1>Play. Explore. Learn.</h1><p>Choose a game and start playing in your browser.</p></div>
+      <div className="game-hero-art" aria-hidden="true"><img src="/assets/hub-game-03.jpg" alt=""/><span/><i/></div></div>
     </section>
 
     <div className="game-feature-band">
