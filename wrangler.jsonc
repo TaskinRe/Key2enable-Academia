@@ -1,0 +1,16 @@
+{
+  "name": "kay2enable-academia",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./dist/client", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  "send_email": [
+    {
+      "name": "BOOKING_EMAIL",
+      "allowed_destination_addresses": ["rubinger@key2enable.com", "rt2609@nyu.edu", "ernest@key2enable.com"]
+    }
+  ],
+  "vars": {
+    "BOOKING_FROM": "bookings@key2enableacademy.com",
+    "BOOKING_RECIPIENTS": "rubinger@key2enable.com,rt2609@nyu.edu,ernest@key2enable.com"
+  }
+}
