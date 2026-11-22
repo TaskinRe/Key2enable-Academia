@@ -3,10 +3,10 @@ import {LearnerOverview} from './DemoDashboard.jsx';
 
 const membershipItems = [
   ['Game library', 'Games for music theory, logic, cognition, literacy and creative play.', 'Playable previews'],
-  ['Learning pathways', 'Three suggested sequences with goals and activities for each step.', 'Planned'],
-  ['Training courses', 'Video courses on assistive technology, AAC and inclusive learning.', 'Planned'],
-  ['Tutorials', 'Short walkthroughs for setting up and playing the games.', 'Planned'],
-  ['Teaching resources', 'Activity guides, lesson plans and family practice checklists.', 'Planned'],
+  ['Learning pathways', 'Three suggested sequences with goals and activities for each step.', 'Demo available'],
+  ['Training courses', 'Video courses on assistive technology, AAC and inclusive learning.', 'Demo available'],
+  ['Tutorials', 'Short walkthroughs for setting up and playing the games.', 'Demo available'],
+  ['Teaching resources', 'Activity guides, lesson plans and family practice checklists.', 'Demo available'],
   ['Learner dashboard', 'A view of practice sessions, pathway progress and goals.', 'Demo available'],
 ];
 
@@ -51,7 +51,7 @@ export function Academy({onContact}) {
     </section>
 
     <section id="Pathways" className="wrap section">
-      <p className="eyebrow">Planned learning pathways</p><h2>Choose a skill to practise</h2>
+      <p className="eyebrow">Learning pathways</p><h2>Choose a skill to practise</h2>
       <div className="pathway-grid">
         <article><h3>Foundational learning</h3><p>Start with keyboard familiarity, then move to letters and short words in Typing Teacher.</p></article>
         <article><h3>Sequencing and problem-solving</h3><p>Plan a route in Robot Workshop, test it, and revise one step at a time.</p></article>
@@ -64,8 +64,8 @@ export function Academy({onContact}) {
       <div className="wrap section">
         <h2>Training for the people who support learners</h2>
         <div className="course-grid">{courses.map(([title, description, topics, audience]) =>
-          <article key={title}><span className="status-chip">Planned</span><h3>{title}</h3><p>{description}</p><ul>{topics.map(topic => <li key={topic}>{topic}</li>)}</ul><p><strong>For</strong> {audience.toLowerCase()}</p></article>
-        )}<article className="course-membership"><h3>Training in the Academy plan</h3><p>Ask how the planned courses and resources could support your team or family.</p><button className="action gold" onClick={() => onContact('Ask about Academy training')}>Book a call</button></article></div>
+          <article key={title}><h3>{title}</h3><p>{description}</p><ul>{topics.map(topic => <li key={topic}>{topic}</li>)}</ul><p><strong>For</strong> {audience.toLowerCase()}</p></article>
+        )}<article className="course-membership"><h3>Training in the Academy plan</h3><p>Ask how the courses and resources could support your team or family.</p><button className="action gold" onClick={() => onContact('Ask about Academy training')}>Book a call</button></article></div>
       </div>
     </section>
 
