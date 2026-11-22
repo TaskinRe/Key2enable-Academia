@@ -48,9 +48,9 @@ function Home({onContact}) {
         <p className="hero-clean-price">Academy subscription · <strong>US$80/month</strong></p>
       </div>
       <div className="hero-clean-trio">
-        <figure className="trio-side"><img src="/assets/hub-game-01.jpg" alt="Piano path, an Academy music game" width="600" height="600"/></figure>
-        <figure className="trio-main"><img src="/assets/lab-gallery/brazil.jpg" alt="A student using a Key-X assistive keyboard in a Key2Enable lab in Brazil" width="1000" height="666" fetchPriority="high"/></figure>
-        <figure className="trio-side"><img src="/assets/hub-game-05.jpg" alt="Alphabet garden, an Academy literacy game" width="600" height="600"/></figure>
+        <figure className="trio-side"><a href="https://taskinre.github.io/Games-for-Key2enable/keyboard-grove/" target="_blank" rel="noopener noreferrer"><img src="/assets/hub-game-01.jpg" alt="Play Keyboard Grove" width="600" height="600"/><span className="trio-play">Play Keyboard Grove</span></a></figure>
+        <figure className="trio-main"><a href="#Game"><img src="/assets/lab-gallery/brazil.jpg" alt="A student using a Key-X assistive keyboard in a Key2Enable lab in Brazil" width="1000" height="666" fetchPriority="high"/><span className="trio-play">See all games</span></a></figure>
+        <figure className="trio-side"><a href="https://taskinre.github.io/Games-for-Key2enable/game-05/" target="_blank" rel="noopener noreferrer"><img src="/assets/hub-game-05.jpg" alt="Play Typing Teacher" width="600" height="600"/><span className="trio-play">Play Typing Teacher</span></a></figure>
       </div>
       <ul className="wrap hero-clean-tech" aria-label="Assistive technology">
         <li><a href="#Products/Key-X"><img src="/assets/key-x.png" alt="" width="120" height="80"/>Key-X keyboard</a></li>
