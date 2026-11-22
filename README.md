@@ -15,7 +15,7 @@ The demo dashboard opens from the Academy page and uses fictional learner record
 
 | Setting | Production value |
 | --- | --- |
-| `BOOKING_RECIPIENTS` | `rubinger@key2enable.com,ernest@key2enable.com,<confirmed rt2609 address>` |
+| `BOOKING_RECIPIENTS` | ` |
 | `BOOKING_FROM` | A sender address on a domain verified in the Key2Enable Resend account |
 | `RESEND_API_KEY` | A send-enabled API key saved as an encrypted secret |
 
