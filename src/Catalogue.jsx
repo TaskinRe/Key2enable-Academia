@@ -2,24 +2,24 @@ import React, {useState} from 'react';
 import {ImpactNumbers} from './MarketingPages.jsx';
 
 export const devices = [
-  ['Key-X', 'Assistive keyboard', 'Type and control the pointer with nine touch-sensitive keys.', 'key-x', [
+  ['Key-X', 'Assistive keyboard', 'Type and control the pointer with nine touch-sensitive keys. Plays every Academy game, from music theory to logic puzzles.', 'key-x', [
     ['Typing and navigation', 'Use combinations of large keys to enter text, move the pointer and browse.'],
     ['Alternative input', 'Connect a compatible switch and use scan mode to cycle through choices.'],
     ['Device compatibility', 'Key2Enable lists Windows, macOS, Linux and Android. Check the setup for your device on a call.'],
   ]],
-  ['Colibri', 'Head-controlled mouse', 'Move the pointer with head movements. The sensor attaches to glasses.', 'colibri', [
+  ['Colibri', 'Head-controlled mouse', 'Move the pointer with head movements. The sensor attaches to glasses, so learners can play Academy games hands-free.', 'colibri', [
     ['Pointer control', 'The wearable sensor translates head movements into pointer movement.'],
     ['Wireless connection', 'Connect the sensor to a compatible device via Bluetooth.'],
   ]],
-  ['A-Blinx', 'Eye-blink switch', 'Use an intentional blink to click or select an item in scan mode.', 'ablinx', [
+  ['A-Blinx', 'Eye-blink switch', 'Use an intentional blink to click or select an item in scan mode, including answers in Academy logic and cognition games.', 'ablinx', [
     ['Click with a blink', 'A blink acts as a switch input.'],
     ['Use with Key-X', 'Pair the switch with scan mode for selection without touching the keyboard.'],
   ]],
-  ['X-Button', 'Press switch', 'Activate a compatible device or adapted toy with a light press.', 'button-png', [
+  ['X-Button', 'Press switch', 'Activate a compatible device or adapted toy with a light press. One press is enough to join in with music and rhythm activities.', 'button-png', [
     ['Physical access', 'Press the switch to make a selection or activate a connected device.'],
     ['Setup', 'Ask which switch inputs and adapted toys work with your equipment.'],
   ]],
-  ['X-Queeze', 'Air-pressure switch', 'Squeeze the air bladder to make a selection in Key-X scan mode.', 'xq-use', [
+  ['X-Queeze', 'Air-pressure switch', 'Squeeze the air bladder to make a selection in Key-X scan mode and play Academy games with a grip.', 'xq-use', [
     ['Squeeze to select', 'The air bladder provides a grip-based way to activate a switch.'],
     ['Use with Key-X', 'Connect to Key-X and use scan mode to cycle through choices.'],
   ]],
@@ -68,7 +68,7 @@ function Materials({standalone = false}) {
   return <section className="catalogue-section material-panel">
     <Heading>Teaching materials</Heading>
     <p>Planned Academy resources include lesson plans, activity guides and caregiver checklists.</p>
-    <a className="text-link" href="#Academy">View the proposed membership</a>
+    <a className="text-link" href="#Academy">View the Academy subscription</a>
   </section>;
 }
 

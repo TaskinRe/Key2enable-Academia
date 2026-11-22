@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {LearnerOverview} from './DemoDashboard.jsx';
 
 const membershipItems = [
-  ['Game library', 'Browser games for letters, sequencing, patterns and creative play.', 'Playable previews'],
+  ['Game library', 'Games for music theory, logic, cognition, literacy and creative play.', 'Playable previews'],
   ['Learning pathways', 'Three suggested sequences with goals and activities for each step.', 'Planned'],
   ['Training courses', 'Video courses on assistive technology, AAC and inclusive learning.', 'Planned'],
   ['Tutorials', 'Short walkthroughs for setting up and playing the games.', 'Planned'],
@@ -25,7 +25,7 @@ export function Academy({onContact}) {
       <div className="wrap">
         <div className="pricing-title enter">
           <div><p className="eyebrow">Academy / Membership</p><h1>Become a member</h1></div>
-          <p>One proposed membership for learners and the families, teachers and specialists who support them.</p>
+          <p>One subscription for learners and the families, teachers and specialists who support them.</p>
         </div>
         <div className="pricing-grid">
           <article className="price-card">
@@ -34,11 +34,11 @@ export function Academy({onContact}) {
               <button aria-pressed={yearly} onClick={() => setYearly(true)}>Yearly</button>
             </div>
             <h2>Academy membership</h2>
-            <p className="pricing-amount" aria-live="polite"><strong>{yearly ? 'US$720' : 'US$60'}</strong> {yearly ? 'per year' : 'per month'}</p>
-            <p>{yearly ? 'Equivalent to US$60 a month.' : 'Equivalent to US$720 a year.'}</p>
+            <p className="pricing-amount" aria-live="polite"><strong>{yearly ? 'US$720' : 'US$80'}</strong> {yearly ? 'per year' : 'per month'}</p>
+            <p>{yearly ? 'Works out to US$60 a month. Save 25%.' : 'Or US$720 a year and save 25%.'}</p>
             <ul>{membershipItems.map(([name]) => <li key={name}>{name}</li>)}</ul>
             <button className="action gold action-prominent" onClick={() => onContact('Ask about Academy membership')}>Ask about membership</button>
-            <p><small>Proposed pricing · Membership in development</small></p>
+            
           </article>
           <article className="included-card">
             <h2>What’s included</h2>
@@ -75,7 +75,7 @@ export function Academy({onContact}) {
     </section>
 
     <section id="Resources" className="wrap academy-resources">
-      <div><h2>Teaching and home practice resources</h2><p>The proposed membership includes plans for lesson templates, activity guides, tutorials and caregiver checklists.</p></div>
+      <div><h2>Teaching and home practice resources</h2><p>Your subscription includes lesson templates, activity guides, tutorials and caregiver checklists.</p></div>
       <div><img className="resource-preview" src="/assets/expressia.png" alt="Expressia learning and communication software" loading="lazy"/><h3>Expressia</h3><p>Build customised communication boards and learning activities with pictures, text and sound.</p><a className="text-link" href="https://www.key2enable.ae/solutions#solution-expressia">Explore Expressia</a></div>
     </section>
     <section className="wrap section split-feature">
