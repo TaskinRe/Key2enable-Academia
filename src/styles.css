@@ -1232,7 +1232,7 @@ html[data-motion="off"] .d-line .dd { stroke-dasharray: none; animation: none; }
 .get-in-touch { margin-top: clamp(80px, 9vw, 120px) !important; }
 .about-map, .about-reel, .about-next, .journey { margin-block: clamp(70px, 9vw, 130px) !important; }
 #Naqra { margin-block: clamp(80px, 10vw, 140px) !important; gap: clamp(32px, 6vw, 80px) !important; }
-.journey li + li { margin-top: clamp(28px, 4vw, 48px); }
+.journey-item + .journey-item { margin-top: clamp(28px, 4vw, 48px); }
 .hero-clean-tech { margin-top: 44px !important; }
 
 /* Hero images link to games */
