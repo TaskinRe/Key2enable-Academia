@@ -67,7 +67,7 @@ function Materials({standalone = false}) {
   const Heading = standalone ? 'h1' : 'h2';
   return <section className="catalogue-section material-panel">
     <Heading>Teaching materials</Heading>
-    <p>Planned Academy resources include lesson plans, activity guides and caregiver checklists.</p>
+    <p>Academy resources include lesson plans, activity guides and caregiver checklists.</p>
     <a className="text-link" href="#Academy">View the Academy subscription</a>
   </section>;
 }

@@ -5,7 +5,7 @@ import {Academy} from './Academy.jsx';
 const labsURL = 'https://www.key2enable.ae/labs';
 const studyURL = 'https://nafath.mada.org.qa/nafath-article/mcn3005/';
 const zhoURL = 'https://www.za.gov.ae/en/Media-Centre/News/Zayed-higher-organization-launches-naqra-lab-in-abu-ahabi-and-al-ain';
-const figures = [['9', 'Countries'], ['50+', 'Labs worldwide'], ['30,000+', 'Students reached']];
+const figures = [['10', 'Countries'], ['50+', 'Labs worldwide'], ['30,000+', 'Students reached']];
 
 export function ImpactNumbers() {
   return <>
@@ -27,7 +27,7 @@ export function Partnership() {
   </section>;
 }
 
-const countries = ['Armenia', 'Brazil', 'Canada', 'India', 'Iraq', 'Qatar', 'Spain', 'United Arab Emirates', 'United Kingdom'];
+const countries = ['Armenia', 'Brazil', 'Canada', 'India', 'Iraq', 'Qatar', 'Spain', 'United Arab Emirates', 'United Kingdom', 'United States'];
 
 const familyStories = [
   {name: 'Julia', title: 'Writing in her classroom', image: 'julia.jpg', detail: 'Key2Enable shows how Julia uses the Key-X to write in a mainstream classroom.', video: 'RgfzZxNanZ8'},
@@ -71,7 +71,7 @@ function Families({onContact}) {
   </article>;
 }
 
-const aboutGallery = [['lab-gallery/brazil.jpg', 'Brazil'], ['lab-gallery/armenia2.jpg', 'Armenia'], ['lab-gallery/india2.jpg', 'India'], ['lab-gallery/qatar1.jpg', 'Qatar'], ['lab-gallery/uk1.jpg', 'United Kingdom'], ['lab-gallery/canada2.jpg', 'Canada']];
+const aboutGallery = [['lab-gallery/usa-singularity.jpg', 'United States - Singularity University', 'Key2Enable at Singularity University in the United States'], ['lab-gallery/usa-sacramento.jpg', 'United States - Sacramento', 'Key2Enable Key-X keyboards on display in Sacramento, United States'], ['lab-gallery/usa-berkeley-haas.jpg', 'United States - UC Berkeley Haas', 'The Key2Enable team receiving the 2019 Global Social Venture Competition first prize at UC Berkeley Haas'], ['lab-gallery/brazil.jpg', 'Brazil'], ['lab-gallery/armenia2.jpg', 'Armenia'], ['lab-gallery/india2.jpg', 'India'], ['lab-gallery/qatar1.jpg', 'Qatar'], ['lab-gallery/uk1.jpg', 'United Kingdom'], ['lab-gallery/canada2.jpg', 'Canada']];
 const founders = ['José Rubinger Filho', 'Adriano Assis', 'William de Oliveira', 'Alexandre Assis', 'Marcelo Rubinger'];
 const founderColors = ['#1C75BC', '#6B2C84', '#2E9A63', '#B04F83', '#C56F1F'];
 const initials = name => name.split(' ').filter(w => w[0] === w[0].toUpperCase()).map(w => w[0]).slice(0, 2).join('');
@@ -184,13 +184,13 @@ export function About({onContact}) {
 
     <section id="Labs" className="wrap about-map">
       <h2>Where our labs have worked</h2>
-      <img src="/assets/lab-network-map.svg" alt="World map highlighting the nine countries in Key2Enable’s lab network. The countries are listed below." width="900" height="355" loading="lazy"/>
+      <img src="/assets/lab-network-map.svg" alt="World map highlighting the ten countries in Key2Enable’s lab network. The countries are listed below." width="900" height="355" loading="lazy"/>
       <ul>{countries.map(country => <li key={country}>{country}</li>)}</ul>
     </section>
 
     <section className="about-reel" aria-label="Photos from Key2Enable labs">
       <div className="about-reel-track">
-        {[...aboutGallery, ...aboutGallery].map(([src, place], i) => <figure key={i} aria-hidden={i >= aboutGallery.length ? 'true' : undefined}><img src={'/assets/' + src} alt={i >= aboutGallery.length ? '' : 'Key2Enable lab in ' + place} loading="lazy"/><figcaption>{place}</figcaption></figure>)}
+        {[...aboutGallery, ...aboutGallery].map(([src, place, alt], i) => <figure key={i} aria-hidden={i >= aboutGallery.length ? 'true' : undefined}><img src={'/assets/' + src} alt={i >= aboutGallery.length ? '' : (alt || 'Key2Enable lab in ' + place)} loading="lazy"/><figcaption>{place}</figcaption></figure>)}
       </div>
     </section>
 

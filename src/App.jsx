@@ -48,9 +48,9 @@ function Home({onContact}) {
         <p className="hero-clean-price">Academy subscription · <strong>US$80/month</strong></p>
       </div>
       <div className="hero-clean-trio">
-        <figure className="trio-side"><a href="https://taskinre.github.io/Games-for-Key2enable/keyboard-grove/" target="_blank" rel="noopener noreferrer"><img src="/assets/hub-game-01.jpg" alt="Play Keyboard Grove" width="600" height="600"/><span className="trio-play">Play Keyboard Grove</span></a></figure>
-        <figure className="trio-main"><a href="#Game"><img src="/assets/lab-gallery/brazil.jpg" alt="A student using a Key-X assistive keyboard in a Key2Enable lab in Brazil" width="1000" height="666" fetchPriority="high"/><span className="trio-play">See all games</span></a></figure>
-        <figure className="trio-side"><a href="https://taskinre.github.io/Games-for-Key2enable/game-05/" target="_blank" rel="noopener noreferrer"><img src="/assets/hub-game-05.jpg" alt="Play Typing Teacher" width="600" height="600"/><span className="trio-play">Play Typing Teacher</span></a></figure>
+        <figure className="trio-side"><a href="https://taskinre.github.io/Games-for-Key2enable/game-04/" target="_blank" rel="noopener noreferrer"><img src="/assets/hub-game-04.jpg" alt="Robot Workshop, a logic game where learners guide a robot" width="1536" height="1024"/></a></figure>
+        <figure className="trio-main"><a href="#Game"><img src="/assets/lab-gallery/brazil.jpg" alt="A student using a Key-X assistive keyboard in a Key2Enable lab in Brazil" width="1000" height="666" fetchPriority="high"/></a></figure>
+        <figure className="trio-side"><a href="#For%20families"><img src="/assets/stories/julia.jpg" alt="A smiling student using a Key-X keyboard in class" width="900" height="582"/></a></figure>
       </div>
       <ul className="wrap hero-clean-tech" aria-label="Assistive technology">
         <li><a href="#Products/Key-X"><img src="/assets/key-x.png" alt="" width="120" height="80"/>Key-X keyboard</a></li>
@@ -88,6 +88,7 @@ function Home({onContact}) {
       <div className="fieldwork-gallery">
         <figure className="fieldwork-main"><img src="/assets/lab-gallery/canada2.jpg" width="900" height="600" alt="Key2Enable Family and Community Lab in Canada" loading="lazy"/><figcaption>Family &amp; Community Lab · Canada</figcaption></figure>
         <figure className="fieldwork-secondary"><img src="/assets/lab-gallery/brazil4.jpg" width="900" height="600" alt="Key2Enable learning activities in Brazil" loading="lazy"/><figcaption>Learning activities · Brazil</figcaption></figure>
+        <figure className="fieldwork-secondary"><img src="/assets/lab-gallery/usa-berkeley-haas.jpg" width="1200" height="900" alt="The Key2Enable team receiving the 2019 Global Social Venture Competition first prize at UC Berkeley Haas" loading="lazy"/><figcaption>GSVC winners · UC Berkeley Haas</figcaption></figure>
       </div>
       <div className="get-in-touch">
         <h2>Get in touch with Key2Enable Academy</h2>

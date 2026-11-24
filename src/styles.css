@@ -1241,3 +1241,11 @@ html[data-motion="off"] .d-line .dd { stroke-dasharray: none; animation: none; }
 .hero-clean-trio a:hover .trio-play, .hero-clean-trio a:focus-visible .trio-play { background: #5B3A82; color: #fff; translate: -50% -3px; }
 .hero-clean-trio a:focus-visible { outline: 3px solid #5B3A82; outline-offset: 4px; border-radius: 26px; }
 @media (max-width: 700px) { .trio-play { font-size: .7rem; padding: 6px 10px; bottom: 8px; } .trio-side .trio-play { display: none; } }
+.fieldwork-gallery { grid-template-columns: 1.2fr .8fr .8fr; }
+.fieldwork-gallery figure:nth-child(3) { animation-delay: .24s; }
+@media (max-width: 900px) { .fieldwork-gallery { grid-template-columns: 1fr 1fr; } .fieldwork-main { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .fieldwork-gallery { grid-template-columns: 1fr; } }
+.hero-clean-trio .trio-side:first-child img { object-position: 30% 50%; }
+.hero-clean-trio .trio-side:last-child img { object-position: 50% 60%; }
+.hero-clean-trio .trio-side:first-child img { object-position: 38% 50%; }
+.hero-clean-trio .trio-side:last-child img { object-position: 28% 50%; }
